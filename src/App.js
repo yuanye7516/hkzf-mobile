@@ -15,12 +15,9 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div>
-          <h1>这是App组件</h1>
-        </div>
-        <Link to="/home">首页</Link>
+        {/* <Link to="/home">首页</Link>
         <Link to="/map">地图找房</Link>
-        <Link to="/city">城市选择</Link>
+        <Link to="/city">城市选择</Link> */}
         <Switch>
           <Redirect exact from="/" to="home" />
           <Route path="/home" component={Home} />
